@@ -25,3 +25,19 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
+#For this project, I used SQL to query the Superstore database to get information about items sold at the store and their rating
+#Use SELECT statement to order by stock quantity
+SELECT *
+FROM superstore;
+
+#Show a statistic about total stock quntity
+SELECT SUM(stock_quantity)
+FROM superstore;
+
+#Show statstic about minimum average rating
+SELECT MIN(average_rating)
+FROM superstore;
+
+#Show statistic about maximum average rating
+SELECT MAX(average_rating)
+FROM superstore;
